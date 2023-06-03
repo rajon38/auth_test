@@ -16,7 +16,6 @@ const mongoose = require('mongoose');
 app.use(mongoSanitize());
 app.use(express.static('client/build'));
 const {readdirSync} = require("fs");
-const path = require("path");
 
 //Security middleware implement
 app.use(cors())
